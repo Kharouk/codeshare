@@ -53,6 +53,7 @@ type Subscription {
 type User {
   id: ID!
   name: String!
+  email: String!
 }
 
 type UserConnection {
@@ -63,6 +64,7 @@ type UserConnection {
 
 input UserCreateInput {
   name: String!
+  email: String!
 }
 
 type UserEdge {
@@ -75,6 +77,8 @@ enum UserOrderByInput {
   id_DESC
   name_ASC
   name_DESC
+  email_ASC
+  email_DESC
   createdAt_ASC
   createdAt_DESC
   updatedAt_ASC
@@ -84,6 +88,7 @@ enum UserOrderByInput {
 type UserPreviousValues {
   id: ID!
   name: String!
+  email: String!
 }
 
 type UserSubscriptionPayload {
@@ -106,10 +111,12 @@ input UserSubscriptionWhereInput {
 
 input UserUpdateInput {
   name: String
+  email: String
 }
 
 input UserUpdateManyMutationInput {
   name: String
+  email: String
 }
 
 input UserWhereInput {
@@ -141,6 +148,20 @@ input UserWhereInput {
   name_not_starts_with: String
   name_ends_with: String
   name_not_ends_with: String
+  email: String
+  email_not: String
+  email_in: [String!]
+  email_not_in: [String!]
+  email_lt: String
+  email_lte: String
+  email_gt: String
+  email_gte: String
+  email_contains: String
+  email_not_contains: String
+  email_starts_with: String
+  email_not_starts_with: String
+  email_ends_with: String
+  email_not_ends_with: String
   AND: [UserWhereInput!]
   OR: [UserWhereInput!]
   NOT: [UserWhereInput!]
