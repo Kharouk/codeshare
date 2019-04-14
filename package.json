@@ -1,0 +1,19 @@
+{
+  "name": "codeshare",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "open http://localhost:3000 && next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "6",
+    "babel-preset-react-app": "3",
+    "express": "^4.16.4",
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
