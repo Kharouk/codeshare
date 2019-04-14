@@ -1,0 +1,10 @@
+endpoint: ${env:LOCALHOST_URL}
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/
+
+hooks:
+  post-deploy:
+      - graphql get-schema -p prisma
