@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <div>
       <h2>Welcome to CodeShare</h2>
-      <Link href="/about">
+      <Link href="/about" title="About Page">
         <a>About Page</a>
       </Link>
       <Link href="/login">

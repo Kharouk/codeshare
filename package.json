@@ -11,10 +11,14 @@
   "dependencies": {
     "next": "^8.0.4",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0",
+    "styled-system": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.12.4"
+    "react-styleguidist": "^9.0.7",
+    "eslint-plugin-react": "^7.12.4",
+    "prop-types": "^15.7.2"
   }
 }
