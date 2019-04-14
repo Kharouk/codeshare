@@ -11,8 +11,11 @@ const Button = styled.div`
   margin: 0.5rem 1rem;
   width: 11rem;
   background: transparent;
-  color: white;
   border: 2px solid white;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `
 
 const Tag = ({ children, href }) => {
