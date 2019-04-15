@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Link from "next/link"
 
 const Button = styled.div`
-  display: inline-block;
+  display: inline;
   border-radius: 3px;
   padding: 0.5rem 0;
   margin: 0.5rem 1rem;
@@ -14,6 +14,11 @@ const Button = styled.div`
   a {
     text-decoration: none;
     color: black;
+  }
+  &:hover {
+    color: #333;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #333;
   }
 `
 

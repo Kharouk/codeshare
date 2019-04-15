@@ -1,15 +1,15 @@
 import React from "react"
-import Link from "next/link"
 import Tag from "./components/Tag"
+import Heading from "./components/Heading"
+import Main from "./components/app/Main"
 
 const Index = () => {
   return (
     <div>
-      <h2>Welcome to CodeShare</h2>
-      <Tag href="/about">About us</Tag>
-      <Link href="/login">
-        <a>Login</a>
-      </Link>
+      <Heading center>CodeShare</Heading>
+      <Tag href="/about">About Us</Tag>
+      <Tag href="/login">Login</Tag>
+      <Main />
     </div>
   )
 }
