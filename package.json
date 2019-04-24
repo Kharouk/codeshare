@@ -12,6 +12,7 @@
   "main": "Index.js",
   "license": "MIT",
   "dependencies": {
+    "graphql-yoga": "^1.17.4",
     "next": "^8.0.4",
     "prisma-binding": "^2.3.10",
     "react": "^16.8.6",
