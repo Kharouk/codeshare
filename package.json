@@ -5,6 +5,7 @@
     "dev": "open http://localhost:3000 && next",
     "backend": "cd ./backend/generated && docker-compose up -d",
     "backend-deploy": "cd ./backend/generated && prisma deploy -e ../../.env",
+    "backend-generate": "cd ./backend/generated && prisma generate - ../../.env",
     "build": "next build",
     "start": "next start"
   },
@@ -12,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "next": "^8.0.4",
+    "prisma-binding": "^2.3.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0",
