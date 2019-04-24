@@ -1,19 +1,23 @@
 {
-  "name": "codeshare",
-  "version": "1.0.0",
+  "name": "CodeShare",
+  "version": "1.0.1",
   "scripts": {
-    "dev": "open http://localhost:3000 && next",
+    "start": "nodemon -e js,graphql -x node backend/index.js",
+    "debug": "nodemon -e js,graphql -x node --inspect backend/index.js",
+    "playground": "graphql playground --dotenv ../../.env",
+    "dev": "npm-run-all --parallel debug playground",
     "backend": "cd ./backend/generated && docker-compose up -d",
     "backend-deploy": "cd ./backend/generated && prisma deploy -e ../../.env",
-    "backend-generate": "cd ./backend/generated && prisma generate - ../../.env",
-    "build": "next build",
-    "start": "next start"
+    "backend-generate": "cd ./backend/generated && prisma generate - ../../.env"
   },
   "main": "Index.js",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^7.0.0",
     "graphql-yoga": "^1.17.4",
     "next": "^8.0.4",
+    "nodemon": "^1.18.11",
+    "npm-run-all": "^4.1.5",
     "prisma-binding": "^2.3.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
