@@ -4,9 +4,9 @@ const { Prisma } = require(`prisma-binding`)
 // this file connects to the remote prisma DB  and gives us the ability to query it with JS
 
 const db = new Prisma({
-  typeDefs: `backend/generated/prisma-client/prisma-scheme.js`,
+  typeDefs: `backend/schema.graphql`,
   // eslint-disable-next-line no-undef
-  endpoint: process.env.LOCALHOST_URL,
+  endpoint: `http://localhost:4466`,
   // eslint-disable-next-line no-undef
   secret: process.env.PRISMA_SECRET,
   debug: true

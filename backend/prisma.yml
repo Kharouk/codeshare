@@ -1,6 +1,6 @@
 endpoint: ${env:LOCALHOST_URL}
 datamodel: datamodel.prisma
-# secret: ${env:PRISMA_SECRET}
+secret: ${env:PRISMA_SECRET}
 generate:
   - generator: javascript-client
     output: ./generated/prisma-client/

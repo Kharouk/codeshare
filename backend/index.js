@@ -6,7 +6,6 @@ const server = createServer()
 
 // TODO Use express middleware to handle cookies
 // TODO Use express middleware to populate current user
-
 server.start(
   {
     cors: {
