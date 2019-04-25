@@ -14,9 +14,11 @@ function createServer() {
       Query,
       Mutation
     },
+    // TODO: FIND OUT WHY THIS IS NEEDED:
     resolverValidationOptions: {
       requireResolversForResolveType: false
     },
+    // TODO: FIND OUT WHY THIS IS NEEDED:
     context: req => ({ ...req, db })
   })
 }
